@@ -1,0 +1,92 @@
+|8-Bit-Shift
+output <= insta7.DB_MAX_OUTPUT_PORT_TYPE
+Clock => insta7.CLK
+Clock => insta6.CLK
+Clock => insta5.CLK
+Clock => insta4.CLK
+Clock => insta3.CLK
+Clock => insta2.CLK
+Clock => insta1.CLK
+Clock => insta.CLK
+Enable => inst.IN0
+Enable => 2x1mux:inst1.S
+Enable => 2x1mux:inst2.S
+Enable => 2x1mux:inst3.S
+Enable => 2x1mux:inst4.S
+Enable => 2x1mux:inst5.S
+Enable => 2x1mux:inst6.S
+Enable => 2x1mux:inst7.S
+seed0 => inst.IN1
+seed1 => 2x1mux:inst1.Y
+seed2 => 2x1mux:inst2.Y
+seed3 => 2x1mux:inst3.Y
+seed4 => 2x1mux:inst4.Y
+seed5 => 2x1mux:inst5.Y
+seed6 => 2x1mux:inst6.Y
+seed7 => 2x1mux:inst7.Y
+Seed1a <= insta.DB_MAX_OUTPUT_PORT_TYPE
+Seed2a <= insta1.DB_MAX_OUTPUT_PORT_TYPE
+Seed3a <= insta2.DB_MAX_OUTPUT_PORT_TYPE
+Seed4a <= insta3.DB_MAX_OUTPUT_PORT_TYPE
+Seed5a <= insta4.DB_MAX_OUTPUT_PORT_TYPE
+Seed6a <= insta5.DB_MAX_OUTPUT_PORT_TYPE
+Seed7a <= insta6.DB_MAX_OUTPUT_PORT_TYPE
+Seed8a <= insta7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|8-Bit-Shift|2x1mux:inst7
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|8-Bit-Shift|2x1mux:inst6
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|8-Bit-Shift|2x1mux:inst5
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|8-Bit-Shift|2x1mux:inst4
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|8-Bit-Shift|2x1mux:inst3
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|8-Bit-Shift|2x1mux:inst2
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|8-Bit-Shift|2x1mux:inst1
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+

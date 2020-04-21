@@ -1,0 +1,321 @@
+|memAssign
+R00 <= seven_seg_decoder:inst11.A
+Enable => inst4.IN0
+Enable => inst15.IN0
+Enable => inst16.IN0
+Enable => inst17.IN0
+S1 => inst5.IN0
+S1 => inst8.IN1
+S1 => inst10.IN1
+S0 => inst6.IN0
+S0 => inst9.IN0
+S0 => inst10.IN0
+Clock => 4BitReg:inst.Clock
+Clock => 4BitReg:inst1.Clock
+Clock => 4BitReg:inst2.Clock
+Clock => 4BitReg:inst3.Clock
+Data_In[3] => 4BitReg:inst.Input[3]
+Data_In[3] => 4BitReg:inst1.Input[3]
+Data_In[3] => 4BitReg:inst2.Input[3]
+Data_In[3] => 4BitReg:inst3.Input[3]
+Data_In[2] => 4BitReg:inst.Input[2]
+Data_In[2] => 4BitReg:inst1.Input[2]
+Data_In[2] => 4BitReg:inst2.Input[2]
+Data_In[2] => 4BitReg:inst3.Input[2]
+Data_In[1] => 4BitReg:inst.Input[1]
+Data_In[1] => 4BitReg:inst1.Input[1]
+Data_In[1] => 4BitReg:inst2.Input[1]
+Data_In[1] => 4BitReg:inst3.Input[1]
+Data_In[0] => 4BitReg:inst.Input[0]
+Data_In[0] => 4BitReg:inst1.Input[0]
+Data_In[0] => 4BitReg:inst2.Input[0]
+Data_In[0] => 4BitReg:inst3.Input[0]
+R01 <= seven_seg_decoder:inst11.B
+R02 <= seven_seg_decoder:inst11.C
+R03 <= seven_seg_decoder:inst11.D
+R04 <= seven_seg_decoder:inst11.E
+R05 <= seven_seg_decoder:inst11.F
+R06 <= seven_seg_decoder:inst11.G
+R10 <= seven_seg_decoder:inst12.A
+R11 <= seven_seg_decoder:inst12.B
+R12 <= seven_seg_decoder:inst12.C
+R13 <= seven_seg_decoder:inst12.D
+R14 <= seven_seg_decoder:inst12.E
+R15 <= seven_seg_decoder:inst12.F
+R16 <= seven_seg_decoder:inst12.G
+R20 <= seven_seg_decoder:inst13.A
+R21 <= seven_seg_decoder:inst13.B
+R22 <= seven_seg_decoder:inst13.C
+R23 <= seven_seg_decoder:inst13.D
+R24 <= seven_seg_decoder:inst13.E
+R25 <= seven_seg_decoder:inst13.F
+R26 <= seven_seg_decoder:inst13.G
+R30 <= seven_seg_decoder:inst14.A
+R31 <= seven_seg_decoder:inst14.B
+R32 <= seven_seg_decoder:inst14.C
+R33 <= seven_seg_decoder:inst14.D
+R34 <= seven_seg_decoder:inst14.E
+R35 <= seven_seg_decoder:inst14.F
+R36 <= seven_seg_decoder:inst14.G
+
+
+|memAssign|seven_seg_decoder:inst11
+Z => Decoder0.IN3
+Y => Decoder0.IN2
+X => Decoder0.IN1
+W => Decoder0.IN0
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memAssign|4BitReg:inst
+Ouput[3] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[2] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst7.CLK
+Clock => inst9.CLK
+Select => 2x1mux:insta.S
+Select => 2x1mux:insta2.S
+Select => 2x1mux:insta3.S
+Select => 2x1mux:insta6.S
+Input[3] => 2x1mux:insta6.Y
+Input[2] => 2x1mux:insta3.Y
+Input[1] => 2x1mux:insta2.Y
+Input[0] => 2x1mux:insta.Y
+
+
+|memAssign|4BitReg:inst|2x1mux:insta
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst|2x1mux:insta2
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst|2x1mux:insta3
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst|2x1mux:insta6
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|seven_seg_decoder:inst12
+Z => Decoder0.IN3
+Y => Decoder0.IN2
+X => Decoder0.IN1
+W => Decoder0.IN0
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memAssign|4BitReg:inst1
+Ouput[3] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[2] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst7.CLK
+Clock => inst9.CLK
+Select => 2x1mux:insta.S
+Select => 2x1mux:insta2.S
+Select => 2x1mux:insta3.S
+Select => 2x1mux:insta6.S
+Input[3] => 2x1mux:insta6.Y
+Input[2] => 2x1mux:insta3.Y
+Input[1] => 2x1mux:insta2.Y
+Input[0] => 2x1mux:insta.Y
+
+
+|memAssign|4BitReg:inst1|2x1mux:insta
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst1|2x1mux:insta2
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst1|2x1mux:insta3
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst1|2x1mux:insta6
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|seven_seg_decoder:inst13
+Z => Decoder0.IN3
+Y => Decoder0.IN2
+X => Decoder0.IN1
+W => Decoder0.IN0
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memAssign|4BitReg:inst2
+Ouput[3] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[2] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst7.CLK
+Clock => inst9.CLK
+Select => 2x1mux:insta.S
+Select => 2x1mux:insta2.S
+Select => 2x1mux:insta3.S
+Select => 2x1mux:insta6.S
+Input[3] => 2x1mux:insta6.Y
+Input[2] => 2x1mux:insta3.Y
+Input[1] => 2x1mux:insta2.Y
+Input[0] => 2x1mux:insta.Y
+
+
+|memAssign|4BitReg:inst2|2x1mux:insta
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst2|2x1mux:insta2
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst2|2x1mux:insta3
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst2|2x1mux:insta6
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|seven_seg_decoder:inst14
+Z => Decoder0.IN3
+Y => Decoder0.IN2
+X => Decoder0.IN1
+W => Decoder0.IN0
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memAssign|4BitReg:inst3
+Ouput[3] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[2] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst7.CLK
+Clock => inst9.CLK
+Select => 2x1mux:insta.S
+Select => 2x1mux:insta2.S
+Select => 2x1mux:insta3.S
+Select => 2x1mux:insta6.S
+Input[3] => 2x1mux:insta6.Y
+Input[2] => 2x1mux:insta3.Y
+Input[1] => 2x1mux:insta2.Y
+Input[0] => 2x1mux:insta.Y
+
+
+|memAssign|4BitReg:inst3|2x1mux:insta
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst3|2x1mux:insta2
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst3|2x1mux:insta3
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|memAssign|4BitReg:inst3|2x1mux:insta6
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+

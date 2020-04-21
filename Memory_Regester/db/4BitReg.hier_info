@@ -1,0 +1,51 @@
+|4BitReg
+Ouput[3] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[2] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Ouput[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst7.CLK
+Clock => inst9.CLK
+Select => 2x1mux:insta.S
+Select => 2x1mux:insta2.S
+Select => 2x1mux:insta3.S
+Select => 2x1mux:insta6.S
+Input[3] => 2x1mux:insta6.Y
+Input[2] => 2x1mux:insta3.Y
+Input[1] => 2x1mux:insta2.Y
+Input[0] => 2x1mux:insta.Y
+
+
+|4BitReg|2x1mux:insta
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|4BitReg|2x1mux:insta2
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|4BitReg|2x1mux:insta3
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+
+|4BitReg|2x1mux:insta6
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+Y => inst1.IN1
+Q => inst.IN0
+
+

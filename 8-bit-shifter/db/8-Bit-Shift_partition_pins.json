@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "output",
+					"strict" : false
+				},
+				{
+					"name" : "Seed1a",
+					"strict" : false
+				},
+				{
+					"name" : "Seed2a",
+					"strict" : false
+				},
+				{
+					"name" : "Seed3a",
+					"strict" : false
+				},
+				{
+					"name" : "Seed4a",
+					"strict" : false
+				},
+				{
+					"name" : "Seed5a",
+					"strict" : false
+				},
+				{
+					"name" : "Seed6a",
+					"strict" : false
+				},
+				{
+					"name" : "Seed7a",
+					"strict" : false
+				},
+				{
+					"name" : "Seed8a",
+					"strict" : false
+				},
+				{
+					"name" : "seed7",
+					"strict" : false
+				},
+				{
+					"name" : "Enable",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "seed0",
+					"strict" : false
+				},
+				{
+					"name" : "seed1",
+					"strict" : false
+				},
+				{
+					"name" : "seed2",
+					"strict" : false
+				},
+				{
+					"name" : "seed3",
+					"strict" : false
+				},
+				{
+					"name" : "seed4",
+					"strict" : false
+				},
+				{
+					"name" : "seed5",
+					"strict" : false
+				},
+				{
+					"name" : "seed6",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

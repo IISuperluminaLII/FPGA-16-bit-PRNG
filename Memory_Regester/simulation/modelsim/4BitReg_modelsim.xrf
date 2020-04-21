@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/Final_2/Memory_Regester/4BitReg.bdf
+source_file = 1, U:/CPRE281/Final_2/Memory_Regester/2x1mux.bdf
+design_name = \4BitReg 
+instance = comp, \Ouput[0]~output , Ouput[0]~output, \4BitReg , 1
+instance = comp, \Ouput[1]~output , Ouput[1]~output, \4BitReg , 1
+instance = comp, \Ouput[2]~output , Ouput[2]~output, \4BitReg , 1
+instance = comp, \Ouput[3]~output , Ouput[3]~output, \4BitReg , 1
+instance = comp, \Clock~input , Clock~input, \4BitReg , 1
+instance = comp, \Clock~inputclkctrl , Clock~inputclkctrl, \4BitReg , 1
+instance = comp, \Input[0]~input , Input[0]~input, \4BitReg , 1
+instance = comp, \Select~input , Select~input, \4BitReg , 1
+instance = comp, \Input[1]~input , Input[1]~input, \4BitReg , 1
+instance = comp, \Input[2]~input , Input[2]~input, \4BitReg , 1
+instance = comp, \inst7~feeder , inst7~feeder, \4BitReg , 1
+instance = comp, \Input[3]~input , Input[3]~input, \4BitReg , 1

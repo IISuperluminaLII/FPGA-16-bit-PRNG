@@ -1,0 +1,9 @@
+|2bitcounter
+Y1 <= instas.DB_MAX_OUTPUT_PORT_TYPE
+Clock => instas.CLK
+Clock => instas1.CLK
+W => inst.IN0
+W => inst9.IN0
+Y0 <= instas1.DB_MAX_OUTPUT_PORT_TYPE
+
+

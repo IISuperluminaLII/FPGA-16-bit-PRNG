@@ -1,0 +1,181 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "R00",
+					"strict" : false
+				},
+				{
+					"name" : "R01",
+					"strict" : false
+				},
+				{
+					"name" : "R02",
+					"strict" : false
+				},
+				{
+					"name" : "R03",
+					"strict" : false
+				},
+				{
+					"name" : "R04",
+					"strict" : false
+				},
+				{
+					"name" : "R05",
+					"strict" : false
+				},
+				{
+					"name" : "R06",
+					"strict" : false
+				},
+				{
+					"name" : "R10",
+					"strict" : false
+				},
+				{
+					"name" : "R11",
+					"strict" : false
+				},
+				{
+					"name" : "R12",
+					"strict" : false
+				},
+				{
+					"name" : "R13",
+					"strict" : false
+				},
+				{
+					"name" : "R14",
+					"strict" : false
+				},
+				{
+					"name" : "R15",
+					"strict" : false
+				},
+				{
+					"name" : "R16",
+					"strict" : false
+				},
+				{
+					"name" : "R20",
+					"strict" : false
+				},
+				{
+					"name" : "R21",
+					"strict" : false
+				},
+				{
+					"name" : "R22",
+					"strict" : false
+				},
+				{
+					"name" : "R23",
+					"strict" : false
+				},
+				{
+					"name" : "R24",
+					"strict" : false
+				},
+				{
+					"name" : "R25",
+					"strict" : false
+				},
+				{
+					"name" : "R26",
+					"strict" : false
+				},
+				{
+					"name" : "R30",
+					"strict" : false
+				},
+				{
+					"name" : "R31",
+					"strict" : false
+				},
+				{
+					"name" : "R32",
+					"strict" : false
+				},
+				{
+					"name" : "R33",
+					"strict" : false
+				},
+				{
+					"name" : "R34",
+					"strict" : false
+				},
+				{
+					"name" : "R35",
+					"strict" : false
+				},
+				{
+					"name" : "R36",
+					"strict" : false
+				},
+				{
+					"name" : "seedOutput",
+					"strict" : false
+				},
+				{
+					"name" : "COUNTERY1",
+					"strict" : false
+				},
+				{
+					"name" : "CUNTERY0",
+					"strict" : false
+				},
+				{
+					"name" : "AdressCounterEnable",
+					"strict" : false
+				},
+				{
+					"name" : "S7",
+					"strict" : false
+				},
+				{
+					"name" : "Enable",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "S6",
+					"strict" : false
+				},
+				{
+					"name" : "S5",
+					"strict" : false
+				},
+				{
+					"name" : "ClockDbounce",
+					"strict" : false
+				},
+				{
+					"name" : "S4",
+					"strict" : false
+				},
+				{
+					"name" : "S3",
+					"strict" : false
+				},
+				{
+					"name" : "S2",
+					"strict" : false
+				},
+				{
+					"name" : "S1",
+					"strict" : false
+				},
+				{
+					"name" : "S0",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

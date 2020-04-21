@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/Final_2/2BitCounter/2bitcounter.bdf
+source_file = 1, U:/CPRE281/Final_2/2BitCounter/db/2bitcounter.cbx.xml
+design_name = \2bitcounter 
+instance = comp, \Y1~output , Y1~output, \2bitcounter , 1
+instance = comp, \Y0~output , Y0~output, \2bitcounter , 1
+instance = comp, \Clock~input , Clock~input, \2bitcounter , 1
+instance = comp, \W~input , W~input, \2bitcounter , 1

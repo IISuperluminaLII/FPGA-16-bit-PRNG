@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/Final_2/8-bit-shifter/2x1 Mux/2x1mux.bdf
+source_file = 1, U:/CPRE281/Final_2/8-bit-shifter/2x1 Mux/db/2x1mux.cbx.xml
+design_name = \2x1mux 
+instance = comp, \Out~output , Out~output, \2x1mux , 1
+instance = comp, \Q~input , Q~input, \2x1mux , 1
+instance = comp, \S~input , S~input, \2x1mux , 1
+instance = comp, \Y~input , Y~input, \2x1mux , 1
+instance = comp, \inst3~0 , inst3~0, \2x1mux , 1
